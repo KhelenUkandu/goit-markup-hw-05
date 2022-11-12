@@ -64,7 +64,16 @@
 						<br />
 						вашого бізнесу
 					</h1>
-					<button class="button" type="button">Замовити послугу</button>
+					<button class="button" type="button" data-modal-open>Замовити послугу</button>
+				</div>
+				<div class="backdrop is-hidden" data-modal>
+					<div class="modal">
+						<button type="button" class="close" data-modal-close>
+							<svg class="close-icon" width="18" height="18">
+							  <use href="./images/icons.svg#icon-close"></use>
+							</svg>
+						</button>
+					</div>
 				</div>
 			</section>
 
@@ -119,15 +128,24 @@
 				<div class="container">
 					<h2 class="section-title">Чим ми займаємося</h2>
 					<ul class="examples list">
-						<li><img src="./images/img-block3-1.jpg" alt="Ноутбук і клавіатура" width="370" height="294" /></li>
-						<li><img src="./images/img-block3-2.jpg" alt="Телефон" width="370" height="294" /></li>
-						<li><img src="./images/img-block3-3.jpg" alt="Планшет" width="370" height="294" /></li>
+						<li class="examples-item">
+							<img src="./images/img-block3-1.jpg" alt="Ноутбук і клавіатура" width="370" height="294" />
+							<div class="examples-case"><h3 class="title">Десктопні додатки</h3></div>
+						</li>
+						<li class="examples-item">
+							<img src="./images/img-block3-2.jpg" alt="Телефон" width="370" height="294" />
+							<div class="examples-case"><h3 class="title">Мобільні додатки</h3></div>
+						</li>
+						<li class="examples-item">
+							<img src="./images/img-block3-3.jpg" alt="Планшет" width="370" height="294" />
+							<div class="examples-case"><h3 class="title">Дизайнерські рішення</h3></div>
+						</li>
 					</ul>
 				</div>
 			</section>
 
 			<!-- Наша команда  -->
-			<section class="section examples">
+			<section class="section team-section">
 				<div class="container">
 					<h2 class="section-title">Наша команда</h2>
 					<ul class="team list">
@@ -418,5 +436,8 @@
 				</div>
 			</div>
 		</footer>
+
+		<script src="./js/modal.js"></script>
+		
 	</body>
 </html>
